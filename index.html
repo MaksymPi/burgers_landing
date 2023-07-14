@@ -17,17 +17,17 @@
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="#">Почему у нас</a>
+                        <a data-link="why">Почему у нас</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Меню бургеров</a>
+                        <a data-link="products">Меню бургеров</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Оформление заказа</a>
+                        <a data-link="order">Оформление заказа</a>
                     </li>
                 </ul>
             </nav>
-            <div class="currency" title="Змінити валюту">$</div>
+            <div class="currency" title="Змінити валюту" id="change-currency">$</div>
         </div>
     </header>
 
@@ -41,7 +41,7 @@
                     бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
                 </p>
                 <div class="main-action">
-                    <button class="button">Смотреть меню</button>
+                    <button class="button" id="main-action-button">Смотреть меню</button>
                 </div>
             </div>
             <img class="main-image" src="images/main_burger.png" alt="Big burger">
@@ -51,7 +51,7 @@
 </section>
 
 
-<section class="why">
+<section class="why" id="why">
     <div class="container">
         <div class="why-title common-title">почему нас выбирают?</div>
         <div class="why-items">
@@ -80,7 +80,7 @@
     </div>
 </section>
 
-<section class="products">
+<section class="products" id="products">
     <div class="container">
         <div class="products-title common-title">выберите свой бургер</div>
         <div class="products-items">
@@ -96,7 +96,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">8 $</div>
+                            <div class="products-item-price" data-base-price="8">8 $</div>
                             <div class="products-item-weigh">360 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -126,7 +126,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">7 $</div>
+                            <div class="products-item-price" data-base-price="7">7 $</div>
                             <div class="products-item-weigh">390 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -155,7 +155,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">10 $</div>
+                            <div class="products-item-price" data-base-price="10">10 $</div>
                             <div class="products-item-weigh">420 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -184,7 +184,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">7 $</div>
+                            <div class="products-item-price" data-base-price="7">7 $</div>
                             <div class="products-item-weigh">220 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -213,7 +213,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">8 $</div>
+                            <div class="products-item-price" data-base-price="8">8 $</div>
                             <div class="products-item-weigh">220 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -242,7 +242,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">9 $</div>
+                            <div class="products-item-price" data-base-price="9">9 $</div>
                             <div class="products-item-weigh">320 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -271,7 +271,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">8 $</div>
+                            <div class="products-item-price" data-base-price="8">8 $</div>
                             <div class="products-item-weigh">280 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -299,7 +299,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">7 $</div>
+                            <div class="products-item-price" data-base-price="7">7 $</div>
                             <div class="products-item-weigh">380 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -327,7 +327,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">11 $</div>
+                            <div class="products-item-price" data-base-price="11">11 $</div>
                             <div class="products-item-weigh">400 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -355,7 +355,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">9 $</div>
+                            <div class="products-item-price" data-base-price="9">9 $</div>
                             <div class="products-item-weigh">300 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -383,7 +383,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">8 $</div>
+                            <div class="products-item-price" data-base-price="8">8 $</div>
                             <div class="products-item-weigh">320 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -411,7 +411,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">9 $</div>
+                            <div class="products-item-price" data-base-price="9">9 $</div>
                             <div class="products-item-weigh">360 гр</div>
                         </div>
                         <div class="products-item-action">
@@ -433,7 +433,7 @@
     </div>
 </section>
 
-<section class="order">
+<section class="order" id="order">
     <div class="container">
         <div class="order-title common-title">оформление заказа</div>
         <img class="order-image" src="images/section-order/food-delivery.png" alt="delivery">
@@ -442,15 +442,15 @@
             </div>
             <div class="order-form-inputs">
                 <div class="order-form-input">
-                    <input type="text" placeholder="Ваш заказ">
+                    <input id="burger" type="text" placeholder="Ваш заказ">
                 </div>
                 <div class="order-form-input">
-                    <input type="text" placeholder="Ваше имя">
+                    <input id="name" type="text" placeholder="Ваше имя">
                 </div>
                 <div class="order-form-input">
-                    <input type="text" placeholder="Ваш телефон">
+                    <input id="phone" type="text" placeholder="Ваш телефон">
                 </div>
-                <div class="button">Оформить заказ</div>
+                <div class="button" id="order-action" >Оформить заказ</div>
             </div>
         </div>
     </div>
@@ -464,5 +464,6 @@
         <div class="rights">Все права защищены</div>
     </div>
 </footer>
+<script src="scripts/script.js" ></script>
 </body>
 </html>
